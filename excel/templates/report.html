@@ -1,0 +1,7 @@
+<div>
+    <form action="." method="POST" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit">Загрузка Excel документа</button>
+    </form>
+</div>
