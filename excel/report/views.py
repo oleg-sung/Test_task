@@ -8,7 +8,7 @@ from report.servise import ReportService
 def correct_report(request, *args, **kwargs):
     """
     Проверяет тип файла.
-    Корректирует отчет и отправляет в ответ полученный результат в FileResponse
+    Корректирует отчет и отправляет в ответ полученный результат FileResponse
     """
     if request.method == 'POST':
         file = request.FILES['file']
