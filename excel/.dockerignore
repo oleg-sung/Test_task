@@ -11,7 +11,9 @@
 venv/
 
 .idea
+<<<<<<< HEAD
 README.md
+=======
 .env
 .env.dev
 
