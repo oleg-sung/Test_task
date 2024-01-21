@@ -299,11 +299,11 @@ class DesignReport:
         :param fg_color: цвет заливки ячейки
         """
         _font = self.create_font(font, size, bold)
-        fill = self.create_fill(pattern, fg_color)
+        _fill = self.create_fill(pattern, fg_color)
         for cell in self.ws.iter_rows(min_row=1, max_row=list_indexes[0], min_col=1, max_col=list_indexes[1]):
             for i in range(0, list_indexes[1]):
-                cell[i].font = font
-                cell[i].fill = fill
+                cell[i].font = _font
+                cell[i].fill = _fill
 
     @staticmethod
     def create_font(name: str, size: int, bold: bool = False) -> Font:
